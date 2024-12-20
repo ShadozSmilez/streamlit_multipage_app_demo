@@ -4,7 +4,7 @@ import streamlit as st
 import requests
 
 
-WEBHOOK_URL = st.secrets["WEBHOOK_URL"]
+# WEBHOOK_URL = st.secrets["WEBHOOK_URL"]
 
 def is_valid_email(email):
     # Basic regex pattern form email validation
@@ -36,10 +36,10 @@ def contact_form():
                 st.stop()
 
         # --- Preparar la data para enviar correo por medio del webhook url especificado
-        data = {"email": email, "name": name, "message": message}
-        response = requests.post(WEBHOOK_URL, json=data)
+#        data = {"email": email, "name": name, "message": message}
+#        response = requests.post(WEBHOOK_URL, json=data)
 
-        if response.status_code == 200:
-            st.success("Mensaje enviado correctamente! 🎉", icon="🚀")
-        else:
-            st.error("Ha ocurrido un error al enviar su mensaje", icon="😱")
+#        if response.status_code == 200:
+#            st.success("Mensaje enviado correctamente! 🎉", icon="🚀")
+#        else:
+#            st.error("Ha ocurrido un error al enviar su mensaje", icon="😱")
