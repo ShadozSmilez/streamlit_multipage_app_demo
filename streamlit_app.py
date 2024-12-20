@@ -33,7 +33,7 @@ pg = st.navigation(
 )
 
 # --- SHARED ON ALL PAGES ---
-st.logo("/assets/logo2.png")
+st.logo("assets/logo2.png")
 st.sidebar.text("Practicando Python 🫡 by Shadowz Smilez")
 
 # --- RUN NAVIGATION ---
